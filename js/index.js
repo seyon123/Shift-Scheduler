@@ -120,7 +120,7 @@ function getDate(){
 
 }
 
-clockinbutton.style.display = "block";
+clockinbutton.style.display = "none";
 breakinbutton.style.display = "none";
 breakoutbutton.style.display = "none";
 clockoutbutton.style.display = "none";
@@ -162,7 +162,7 @@ clockoutbutton.onclick = function() {
 function createWorkEvent() {
 
   var event = {
-    'summary': 'WORK (Added By: seyonrajagopal.me)',
+    'summary': 'WORK (Added By: seyonrajagopal.ca)',
     'start': {
       'dateTime': starttime,
     },
