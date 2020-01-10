@@ -125,6 +125,9 @@ breakinbutton.style.display = "none";
 breakoutbutton.style.display = "none";
 clockoutbutton.style.display = "none";
 
+authorizeButton.onclick = function() {
+  clockinbutton.style.display = "block";
+};
 
 clockinbutton.onclick = function() {
   starttime = getDate();
