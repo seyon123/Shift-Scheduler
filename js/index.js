@@ -120,21 +120,24 @@ function getDate(){
 
 }
 
-clockinbutton.style.display = "none";
+clockinbutton.style.display = "block";
 breakinbutton.style.display = "none";
 breakoutbutton.style.display = "none";
 clockoutbutton.style.display = "none";
 
-authorizeButton.onclick = function() {
-  clockinbutton.style.display = "block";
-};
 
 clockinbutton.onclick = function() {
-  starttime = getDate();
-  clockinbutton.style.display = "none";
-  breakinbutton.style.display = "block";
-  breakoutbutton.style.display = "none";
-  clockoutbutton.style.display = "block";
+
+  if(authorizeButton.style.display == 'block'){
+    alert("Please sign-in and allow Google Calendar access to proceed.");
+  }
+  else{
+    starttime = getDate();
+    clockinbutton.style.display = "none";
+    breakinbutton.style.display = "block";
+    breakoutbutton.style.display = "none";
+    clockoutbutton.style.display = "block";
+  }
 };
 
 breakinbutton.onclick = function() {
